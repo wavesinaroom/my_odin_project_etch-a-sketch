@@ -1,8 +1,18 @@
-const cells = document.getElementById("cells");
-const cell = document.createElement('div');
-const gridSize = 16;
 
-for(let i = 0; i <gridSize; ++i)
+function createGrid()
 {
-  cells.appendChild(cell.cloneNode(true));
+  let documentBody = document.body;
+
+  const cells = document.createElement("div");
+  cells.id = 'cells';
+  cells.innerHTML = "<table id='cellsGrid'></table>";
+  documentBody.insertBefore(cells, documentBody.firstChild);
+
+
+  const gridSize = 16;
+  const cellWidth = window.innerWidth/gridSize;
+  const cellHeight = window.innerHeight/gridSize;
 }
+
+
+createGrid();
