@@ -18,9 +18,10 @@ function createGrid()
     let row = document.createElement('div');
     for (var j = 0; j < cellsNumber; j++) {
       let cell = document.createElement('div');
+      cell.id = "cell";
       cell.style.width = cellsWidth + "px";
       cell.style.height = cellsHeight + "px";
-      cell.addEventListener("onmouseover", () => {console.log("Mouse in")});
+      cell.addEventListener("mouseover", () => {console.log("Mouse in")});
       row.appendChild(cell);
     }
     cellsDiv.appendChild(row);
