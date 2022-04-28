@@ -10,7 +10,7 @@ function createGrid()
   documentBody.appendChild(cellsDiv, documentBody.firstChild);
 
   //Sets table style
-  const cellsNumber = 16;
+  const cellsNumber = 160;
   const cellsWidth = window.innerWidth/cellsNumber;
   const cellsHeight = window.innerHeight/cellsNumber;
 
@@ -21,7 +21,7 @@ function createGrid()
       cell.id = "cell";
       cell.style.width = cellsWidth + "px";
       cell.style.height = cellsHeight + "px";
-      cell.addEventListener("mouseover", () => {console.log("Mouse in")});
+      cell.addEventListener("mouseover", () => {cell.style.backgroundColor = "red"});
       row.appendChild(cell);
     }
     cellsDiv.appendChild(row);
