@@ -3,3 +3,15 @@
     display: flex;
     justify-content: flex-start;
 }
+
+#promptButton
+{
+  padding: 100px;
+  font-size: 30px;
+}
+
+#buttonHolder
+{
+  display: flex;
+  justify-content: center;
+}
